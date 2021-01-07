@@ -4,6 +4,7 @@
 
 body {
 	background: #FAEBD7 url('../images/lights2.jpg');
+	background-repeat: no-repeat;
 	color: #333;
 }
 
@@ -15,7 +16,7 @@ a {
 a:hover { color: rgb(132, 248, 24); }
 
 header, nav, main, footer {
-	width: 80%;
+	width: 60%;
 	margin: auto;
 }
 
