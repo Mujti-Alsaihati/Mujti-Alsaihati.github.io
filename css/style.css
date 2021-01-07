@@ -12,7 +12,7 @@ a {
 	color: #333;
 }
 
-a:hover { color: Tomato; }
+a:hover { color: rgb(132, 248, 24); }
 
 header, nav, main, footer {
 	width: 80%;
