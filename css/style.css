@@ -3,8 +3,8 @@
 }
 
 body {
-	background: #FAEBD7 url('../images/lights2.jpg');
-	background-repeat:space;
+	background: hsl(33, 78%, 91%);
+	background-image: url('../images/lights2.jpg');
 }
 
 a {
