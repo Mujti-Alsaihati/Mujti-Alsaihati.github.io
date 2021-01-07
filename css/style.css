@@ -3,7 +3,8 @@
 }
 
 body {
-	background: #000000;
+	background: #FAEBD7 url('../images/lights2.jpg');
+	color: #333;
 }
 
 a {
@@ -35,7 +36,7 @@ header h1 {
 
 header h2 {
 	padding: 40px 60px;
-	font-size: 28px;
+	font-size: 38px;
 }
 
 
