@@ -3,8 +3,7 @@
 }
 
 body {
-	background: #FAEBD7 url('../images/vintage-concrete.png');
-	color: #333;
+	background: #000000;
 }
 
 a {
@@ -32,6 +31,11 @@ header {
 header h1 {
 	padding: 40px 60px;
 	font-size: 48px;
+}
+
+header h2 {
+	padding: 40px 60px;
+	font-size: 28px;
 }
 
 
