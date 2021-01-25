@@ -63,12 +63,12 @@ nav a { color: #fff;
 	padding: 20px 20px;}
 nav a:hover { color: #ff9f9f; }
 
-.cards {
+.projects {
 	display: flex;
 	list-style-type: none;
 }
 
-.cards li {
+.projects li {
 	padding: 20px;
 }
 
@@ -111,7 +111,7 @@ footer {
  footer p { padding: 20px; }
 
  @media only screen and (max-width: 768px) {
- 	.cards {
+ 	.projects {
  		flex-direction: column;
  	}
  	main{
