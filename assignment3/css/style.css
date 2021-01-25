@@ -1,60 +1,88 @@
-* {
-	box-sizing: border-box;
-}
-
 body {
-	background: hsl(33, 78%, 91%);
-	background-image: url('../images/lights2.jpg');
+	background: #ffffff;
+	background-repeat: repeat;
+	background-size: 300px 300px;
+	color: #0077a4;
 }
 
 a {
 	text-decoration: none;
-	color: #333;
+	color: #000;
 }
 
-a:hover { color: rgb(132, 248, 24); }
+a:hover { color: #2fced2; }
 
 header, nav, main, footer {
-	width: 60%;
+	width: 100%;
 	margin: auto;
 }
 
 
 /* Header styles */
 header { 
-	background-color: #000;
-	color: BlanchedAlmond;
+	background-color: #d3762a;
+	color: #fff;
 	min-height: 100px;
-	margin-top: 60px;
-	background-image: url("../images/stars.jpeg");
+font-family: fairplex-narrow, serif;
+
+font-weight: 400;
+
+font-style: normal;
+	text-align: center;
 }
 
 header h1 {
 	padding: 40px 60px;
-	font-size: 48px;
+	font-family: fairplex-narrow, serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 35px;
 }
 
-header h2 {
-	font-size: 58px;
+h2 {
+	color: #000;
+	font-family: "Source Code Pro", monospace;
+	font-size: 18px;
 }
 
 
 /* Nav styles */
-nav { background-color: #333; }
+nav { background-color: #d3762a;
+}
 nav ul { 
 	display: flex;
-	justify-content: flex-end;
+	justify-content: center;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	padding-bottom: 20px;
 }
+
+
 nav li { padding: 10px 10px; }
-nav a { color: BlanchedAlmond; }
-nav a:hover { color: white; }
+nav a { color: #fff; 
+	padding: 20px 20px;}
+nav a:hover { color: #ff9f9f; }
+
+.cards {
+	display: flex;
+	list-style-type: none;
+}
+
+.cards li {
+	padding: 20px;
+}
+
+img {
+	width: 100%;
+}
 
 
 /* Main styles */
 main { 
+	color: #000;
 	background-color: #fff;
 	display: grid;
-	grid-template-columns: 60% 40%;
+	grid-template-columns: 80% 20%;
 }
 
 section {
@@ -62,20 +90,31 @@ section {
 }
 
 section ul, aside ul {
-	list-style-type: square;
 	margin-top: 20px; 
 	margin-left: 30px;
-	margin-bottom: 40px;
+	font-family: 'Open Sans', sans-serif;
+	font-size:14px;
 }
 
 aside {
 	padding: 40px 10px;
 }
 
+
+
 /* Footer styles */
 footer { 
-	background-color: #000;
+	background-color: #d3762a;
 	color: white;
 	text-align: center;
  }
  footer p { padding: 20px; }
+
+ @media only screen and (max-width: 768px) {
+ 	.cards {
+ 		flex-direction: column;
+ 	}
+ 	main{
+ 		grid-template-columns: 100%;
+ 	}
+ }
