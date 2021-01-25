@@ -2,7 +2,7 @@ body {
 	background: #ffffff;
 	background-repeat: repeat;
 	background-size: 300px 300px;
-	color: #0077a4;
+	color: #a40037;
 }
 
 a {
@@ -10,7 +10,7 @@ a {
 	color: #000;
 }
 
-a:hover { color: #2fced2; }
+a:hover { color: #a40037; }
 
 header, nav, main, footer {
 	width: 100%;
@@ -20,7 +20,7 @@ header, nav, main, footer {
 
 /* Header styles */
 header { 
-	background-color: #d3762a;
+	background-color: #2a9dd3;
 	color: #fff;
 	min-height: 100px;
 font-family: fairplex-narrow, serif;
@@ -47,7 +47,7 @@ h2 {
 
 
 /* Nav styles */
-nav { background-color: #d3762a;
+nav { background-color: #2a9dd3;
 }
 nav ul { 
 	display: flex;
@@ -61,7 +61,7 @@ nav ul {
 nav li { padding: 10px 10px; }
 nav a { color: #fff; 
 	padding: 20px 20px;}
-nav a:hover { color: #ff9f9f; }
+nav a:hover { color: #2a9dd3; }
 
 .projects {
 	display: flex;
@@ -104,7 +104,7 @@ aside {
 
 /* Footer styles */
 footer { 
-	background-color: #d3762a;
+	background-color: #2a9dd3;
 	color: white;
 	text-align: center;
  }
