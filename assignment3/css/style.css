@@ -61,7 +61,7 @@ nav ul {
 nav li { padding: 10px 10px; }
 nav a { color: #fff; 
 	padding: 20px 20px;}
-nav a:hover { color: #2a9dd3; }
+nav a:hover { color: #000000; }
 
 .projects {
 	display: flex;
