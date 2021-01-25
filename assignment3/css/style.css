@@ -50,28 +50,39 @@ nav { background-color: #2a9dd3;
 nav ul { 
 	display: flex;
 	justify-content: center;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
 	padding-bottom: 20px;
 }
 
 
-nav li { padding: 10px 10px; }
+nav li { padding: 10px 10px; 
+
+}
+
 nav a { color: #fff; 
-	padding: 20px 20px;}
-nav a:hover { color: #000000; }
+    padding: 20px 20px;
+
+}
+    
+nav a:hover { color: #000000; 
+
+}
 
 .projects {
 	display: flex;
 	list-style-type: none;
+
 }
 
 .projects li {
 	padding: 20px;
+
 }
 
 img {
 	width: 100%;
+
 }
 
 
@@ -90,8 +101,8 @@ section {
 section ul, aside ul {
 	margin-top: 20px; 
 	margin-left: 30px;
-	font-family: 'Open Sans', sans-serif;
-	font-size:14px;
+    font-family: 'Montserrat', sans-serif;
+    font-size:14px;
 }
 
 aside {
@@ -106,7 +117,9 @@ footer {
 	color: white;
 	text-align: center;
  }
- footer p { padding: 20px; }
+ footer p { padding: 20px; 
+
+}
 
  @media only screen and (max-width: 768px) {
  	.projects {
