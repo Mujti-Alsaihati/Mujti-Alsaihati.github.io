@@ -34,13 +34,13 @@ header h1 {
     font-family: 'Potta One', cursive;
 	font-weight: 400;
 	font-style: normal;
-	font-size: 35px;
+	font-size: 38px;
 }
 
 h2 {
 	color: #000;
     font-family: 'Potta One', cursive;
-	font-size: 18px;
+	font-size: 19px;
 }
 
 
@@ -51,7 +51,7 @@ nav ul {
 	display: flex;
 	justify-content: center;
     font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
+    font-size: 19px;
 	padding-bottom: 20px;
 }
 
@@ -102,7 +102,7 @@ section ul, aside ul {
 	margin-top: 20px; 
 	margin-left: 30px;
     font-family: 'Montserrat', sans-serif;
-    font-size:14px;
+    font-size:19px;
 }
 
 aside {
