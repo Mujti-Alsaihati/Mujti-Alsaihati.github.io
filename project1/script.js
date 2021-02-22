@@ -5,7 +5,7 @@ $(function () {
   $(".single-slide").slick({
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 5000,
     infinite: false,
     pauseOnDotsHover: true,
