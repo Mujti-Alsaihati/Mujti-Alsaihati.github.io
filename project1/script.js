@@ -2,6 +2,7 @@
 $(function () {
   // Your Code from here on down. Don't delete that line above!
 
+  
   $(".single-slide").slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -20,6 +21,12 @@ $(function () {
   $(".play").on("click", function () {
     $(".slider").slick("slickPlay")
   })
+
+ 
+    function setHalfVolume() {
+        var myAudio = document.getElementById("audio");
+        myAudio.volume = 0.2;
+    }
 
   // End of Your Code . Don't delete that line below!!
 })
