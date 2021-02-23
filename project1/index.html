@@ -17,15 +17,15 @@
 <section class="slider single-slide">
 	<div class="slide-content">
 		<div>
-			<img src="images/Page1.gif">
+			<img id="alarm-button" src="images/Page1.gif">
 		</div>
 		<div class="text-content">
 			<p>The groom is resting before the big day, but he will not have enough energy for this day. </p>
 			<a href="menu.html" class="button">Menu</a>
 			
 
-			<audio id="audio" style="display:none;" src="sounds/Alarm_page1.mp3"
-				 controls autoplay loop onloadeddata="setHalfVolume()">
+			<audio id="alarm" style="display:none;" src="sounds/Alarm_page1.mp3"
+				 controls loop>
 			
 			
 			
@@ -97,6 +97,19 @@ integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
 crossorigin="anonymous"></script>
 <!-- link for your script file -->
 <script type="text/javascript" src="slick/slick.min.js"></script>
+<script>
+	var alarm = $("#alarm-sound")[0];
+    $("#alarm-button").click(function() {
+      alarm.volume = 0.0;
+      if ($('audio#alarm-sound')[0].paused == false ){
+        alarm.pause();
+      } else {
+        alarm.play();
+      }
+      $('.gif').attr('src', 'page1.gif')
+    });
+
+</script>
 <script src="script.js"></script>
 </body>
 </html>
