@@ -9,7 +9,7 @@ $(function () {
     autoplaySpeed: 5000,
     infinite: false,
     pauseOnDotsHover: true,
-    arrows: false,
+    arrows: true,
     dots: true
   })
 

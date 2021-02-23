@@ -1,115 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>project1</title>
-		<meta name="viewport" content="width=device-width">
+  <head>
+    <meta charset="UTF-8" />
+    <title>project1</title>
+    <meta name="viewport" content="width=device-width" />
+  </head>
+  <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+  <link rel="stylesheet" href="style.css" />
+  <body>
+    <main>
+      <a href="#" class="pause">pause</a>
+      <a href="#" class="play">play</a>
+      <section class="slider single-slide">
+        <div class="slide-content">
+          <div class="text-content">
+            <p>The groom is resting before the big day, but he will not have enough energy for this day.</p>
+            <a href="menu.html" class="button">Menu</a>
 
-</head>
-<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-<link rel="stylesheet" href="style.css">
-<body>
+            <audio id="alarm-sound">
+              <source src="sounds/Alarm_page1.mp3" />
+            </audio>
+          </div>
+          <div>
+            <img class="page1 alarm-button" src="images/1.png" />
+          </div>
+        </div>
+        <div class="slide-content">
+          <div class="text-content">
+            <p>He needs to get groomed because he looks like a mess.</p>
+          </div>
+          <div>
+            <img class="page2 eat-button" src="images/page2.gif" />
+          </div>
+        </div>
+        <div class="slide-content">
+          <div class="text-content">
+            <p>It seems that he is dreading about the costs of the wedding and the time is running.</p>
+          </div>
+          <div>
+            <img class="page3 unknown-button" src="images/page3.gif" />
+          </div>
+        </div>
+        <div class="slide-content">
+          <div class="text-content">
+            <p>Family and friends gather for lunch. Anyway, this is the first and last time they will have luch out of his pocket</p>
+          </div>
+          <div>
+            <img class="page4 cutting-button" src="images/page4.gif" />
+          </div>
+        </div>
+        <div class="slide-content">
+          <div class="text-content">
+            <p>Friends and cousins bathing him because he will have to be squeaky clean.</p>
+          </div>
+          <div>
+            <img class="page5 shower-button" src="images/page5.gif" />
+          </div>
+        </div>
+        <div class="slide-content">
+          <div class="text-content">
+            <p>Now, they will be draiving him around the city celebrating, you know he will not see the city for a while..</p>
+          </div>
+          <div>
+            <img class="page6 eat-button" src="images/page6.gif" />
+          </div>
+        </div>
+        <div class="slide-content">
+          <div class="text-content">
+            <p>Finally, they arrived home after the drive...</p>
+          </div>
+          <div>
+            <img class="page7 shower2-button" src="images/page7.gif" />
+          </div>
+        </div>
+        <div class="slide-content">
+          <div class="text-content">
+            <p>Little time to rest.</p>
+          </div>
+          <div>
+            <img class="page1 horn-button" src="images/page8.gif" />
+          </div>
+        </div>
+      </section>
+    </main>
 
-<main>
-	<a href="#" class="pause">pause</a>
-	<a href="#" class="play">play</a>
-<section class="slider single-slide">
-	<div class="slide-content">
-		<div>
-			<img id="alarm-button" src="images/Page1.gif">
-		</div>
-		<div class="text-content">
-			<p>The groom is resting before the big day, but he will not have enough energy for this day. </p>
-			<a href="menu.html" class="button">Menu</a>
-			
-
-			<audio id="alarm" style="display:none;" src="sounds/Alarm_page1.mp3"
-				 controls loop>
-			
-			
-			
-		</div>
-	</div>
-	<div class="slide-content">
-		<div>
-			<img src="images/page2.gif">
-		</div>
-		<div class="text-content">
-			<p>He needs to get groomed because he looks like a mess.</p>
-		</div>
-	</div>
-	<div class="slide-content">
-		<div>
-			<img src="images/page3.gif">
-		</div>
-		<div class="text-content">
-			<p>It seems that he is dreading about the costs of the wedding and the time is running.</p>
-		</div>
-	</div>
-	<div class="slide-content">
-		<div>
-			<img src="images/page4.gif">
-		</div>
-		<div class="text-content">
-			<p>Family and friends gather for lunch. Anyway, this is the first and last time they will have luch out of his pocket</p>
-		</div>
-	</div>
-	<div class="slide-content">
-		<div>
-			<img src="images/page5.gif">
-		</div>
-		<div class="text-content">
-			<p>Friends and cousins bathing him because he will have to be squeaky clean.</p>
-		</div>
-	</div>
-	<div class="slide-content">
-		<div>
-			<img src="images/page6.gif">
-		</div>
-		<div class="text-content">
-			<p>Now, they will be draiving him around the city celebrating, you know he will not see the city for a while..</p>
-		</div>
-	</div>
-	<div class="slide-content">
-		<div>
-			<img src="images/page7.gif">
-		</div>
-		<div class="text-content">
-			<p>Finally, they arrived home after the drive... </p>
-		</div>
-	</div>
-	<div class="slide-content">
-		<div>
-			<img src="images/page8.gif">
-		</div>
-		<div class="text-content">
-			<p>Little time to rest.</p>
-		</div>
-	</div>
-
-</section>
-</main>
-
-<script
-src="https://code.jquery.com/jquery-3.4.1.min.js"
-integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-crossorigin="anonymous"></script>
-<!-- link for your script file -->
-<script type="text/javascript" src="slick/slick.min.js"></script>
-<script>
-	var alarm = $("#alarm-sound")[0];
-    $("#alarm-button").click(function() {
-      alarm.volume = 0.0;
-      if ($('audio#alarm-sound')[0].paused == false ){
-        alarm.pause();
-      } else {
-        alarm.play();
-      }
-      $('.gif').attr('src', 'page1.gif')
-    });
-
-</script>
-<script src="script.js"></script>
-</body>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <!-- link for your script file -->
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script>
+      var alarm = $("#alarm-sound")[0]
+      $(".alarm-button").click(function () {
+        alarm.volume = 0.2
+        if ($("audio#alarm-sound")[0].paused == false) {
+          alarm.pause()
+        } else {
+          alarm.play()
+        }
+        $(".page1").attr("src", "images/Page1.gif")
+        setTimeout(function () {
+          $(".slick-track").css("left", "-100vw")
+          alarm.pause()
+        }, 1000)
+      })
+    </script>
+    <script src="script.js"></script>
+  </body>
 </html>
