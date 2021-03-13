@@ -19,7 +19,7 @@
             <p>The groom is resting before the big day, but he will not have enough energy for this day.</p>
 
             <audio id="alarm-sound">
-              <source src="sounds/Alarm_page1.mp3" />
+              <source src="sounds/page1.mp3" />
             </audio>
           </div>
           <div>
@@ -31,9 +31,13 @@
             <a href="#" class="pause">pause</a>
             <a href="#" class="play">let's get ready</a>
             <p>He needs to get groomed because he looks like a mess.</p>
+
+            <audio id="cut-sound">
+              <source src="sounds/page2.mp3" />
+            </audio>
           </div>
           <div>
-            <img class="page2 eat-button" src="images/page2.gif" />
+            <img class="page2 cut-button" src="images/page2.png" />
           </div>
         </div>
         <div class="slide-content">
@@ -41,9 +45,13 @@
             <a href="#" class="pause">pause</a>
             <a href="#" class="play">dream is happening</a>
             <p>It seems that he is dreading about the costs of the wedding and the time is running.</p>
+
+            <audio id="shower-sound">
+              <source src="sounds/page3.mp3" />
+            </audio>
           </div>
           <div>
-            <img class="page3 unknown-button" src="images/page3.gif" />
+            <img class="page3 shower-button" src="images/page3.png" />
           </div>
         </div>
         <div class="slide-content">
@@ -51,9 +59,13 @@
             <a href="#" class="pause">pause</a>
             <a href="#" class="play">EAT!</a>
             <p>Family and friends gather for lunch. Anyway, this is the first and last time they will have luch out of his pocket</p>
+          
+            <audio id="eat-sound">
+              <source src="sounds/page4.mp3" />
+            </audio>
           </div>
           <div>
-            <img class="page4 cutting-button" src="images/page4.gif" />
+            <img class="page4 eat-button" src="images/page4.png" />
           </div>
         </div>
         <div class="slide-content">
@@ -61,9 +73,13 @@
             <a href="#" class="pause">pause</a>
             <a href="#" class="play">clean him</a>
             <p>Friends and cousins bathing him because he will have to be squeaky clean.</p>
+
+            <audio id="clean-sound">
+              <source src="sounds/page5.mp3" />
+            </audio>
           </div>
           <div>
-            <img class="page5 shower-button" src="images/page5.gif" />
+            <img class="page5 clean-button" src="images/page5.png" />
           </div>
         </div>
         <div class="slide-content">
@@ -71,9 +87,13 @@
             <a href="#" class="pause">pause</a>
             <a href="#" class="play">let the noise begin</a>
             <p>Now, they will be draiving him around the city celebrating, you know he will not see the city for a while..</p>
+          
+            <audio id="horn-sound">
+              <source src="sounds/page6.mp3" />
+            </audio>
           </div>
           <div>
-            <img class="page6 eat-button" src="images/page6.gif" />
+            <img class="page6 horn-button" src="images/page6.png" />
           </div>
         </div>
         <div class="slide-content">
@@ -81,9 +101,13 @@
             <a href="#" class="pause">pause</a>
             <a href="#" class="play">let's DANCE!</a>
             <p>Finally, they arrived home after the drive...</p>
+
+            <audio id="dance-sound">
+              <source src="sounds/page7.mp3" />
+            </audio>
           </div>
           <div>
-            <img class="page7 shower2-button" src="images/page7.gif" />
+            <img class="page7 dance-button" src="images/page7.png" />
           </div>
         </div>
         <div class="slide-content">
@@ -91,9 +115,13 @@
             <a href="#" class="pause">pause</a>
             <a href="#" class="play">he earns it</a>
             <p>Little time to rest.</p>
+
+            <audio id="rest-sound">
+              <source src="sounds/page8.mp3" />
+            </audio>
           </div>
           <div>
-            <img class="page1 horn-button" src="images/page8.gif" />
+            <img class="page8 rest-button" src="images/page8.png" />
           </div>
         </div>
       </section>
@@ -115,6 +143,111 @@
         setTimeout(function () {
           $(".slick-track").css("left", "-100vw")
           alarm.pause()
+        }, 3000)
+      })
+
+      var cut = $("#cut-sound")[0]
+      $(".cut-button").click(function () {
+        cut.volume = 0.2
+        if ($("audio#cut-sound")[0].paused == false) {
+          cut.pause()
+        } else {
+          cut.play()
+        }
+        $(".page2").attr("src", "images/Page2.gif")
+        setTimeout(function () {
+          $(".slick-track").css("left", "-100vw")
+          cut.pause()
+        }, 3000)
+      })
+
+      var shower = $("#shower-sound")[0]
+      $(".shower-button").click(function () {
+        shower.volume = 0.5
+        if ($("audio#shower-sound")[0].paused == false) {
+          shower.pause()
+        } else {
+          shower.play()
+        }
+        $(".page3").attr("src", "images/Page3.gif")
+        setTimeout(function () {
+          $(".slick-track").css("left", "-100vw")
+          shower.pause()
+        }, 3000)
+      })
+
+      var eat = $("#eat-sound")[0]
+      $(".eat-button").click(function () {
+        eat.volume = 0.5
+        if ($("audio#shower-sound")[0].paused == false) {
+          eat.pause()
+        } else {
+          eat.play()
+        }
+        $(".page4").attr("src", "images/Page4.gif")
+        setTimeout(function () {
+          $(".slick-track").css("left", "-100vw")
+          eat.pause()
+        }, 3000)
+      })
+
+      var clean = $("#clean-sound")[0]
+      $(".clean-button").click(function () {
+        clean.volume = 0.5
+        if ($("audio#clean-sound")[0].paused == false) {
+          clean.pause()
+        } else {
+          clean.play()
+        }
+        $(".page5").attr("src", "images/Page5.gif")
+        setTimeout(function () {
+          $(".slick-track").css("left", "-100vw")
+          clean.pause()
+        }, 3000)
+      })
+
+      var horn = $("#horn-sound")[0]
+      $(".horn-button").click(function () {
+        horn.volume = 0.5
+        if ($("audio#horn-sound")[0].paused == false) {
+          horn.pause()
+        } else {
+          horn.play()
+        }
+        $(".page6").attr("src", "images/Page6.gif")
+        setTimeout(function () {
+          $(".slick-track").css("left", "-100vw")
+          horn.pause()
+        }, 3000)
+      })
+
+      var dance = $("#dance-sound")[0]
+      $(".dance-button").click(function () {
+        dance.volume = 0.5
+        if ($("audio#dance-sound")[0].paused == false) {
+          dance.pause()
+        } else {
+          dance.play()
+        }
+        $(".page7").attr("src", "images/Page7.gif")
+        setTimeout(function () {
+          $(".slick-track").css("left", "-100vw")
+          dance.pause()
+        }, 3000)
+      })
+
+      var rest = $("#rest-sound")[0]
+      $(".rest-button").click(function () {
+        rest.volume = 0.5
+        if ($("audio#rest-sound")[0].paused == false) {
+          rest.pause()
+        } else {
+          rest.play()
+        }
+        $(".page8").attr("src", "images/Page8.gif")
+        setTimeout(function () {
+          $(".slick-track").css("left", "-100vw")
+          rest.pause()
         }, 3000)
       })
     </script>
