@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Saihat wedding</title>
+    <meta name="viewport" content="width=device-width" />
+  </head>
+  <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+  <link rel="stylesheet" href="style.css" />
+  <body>
+    <main>
+
+      <section class="slider single-slide">
+        <div class="slide-content">
+          <div class="text-content">
+            <a href="#" class="pause">CLICK THE CLOCK</a>
+            <a href="#" class="play">next page</a>
+            <p>The groom is resting before the big day, but he will not have enough energy for this day.</p>
+
+            <audio id="alarm-sound">
+              <source src="sounds/page1.mp3" />
+            </audio>
+          </div>
+          <div>
+            <img class="page1 alarm-button" src="images/page1.png" />
+          </div>
+        </div>
+        <div class="slide-content">
+          <div class="text-content">
+            <a href="#" class="pause">LET THEM MOVE</a>
+            <a href="#" class="play">next page</a>
+            <p>He needs to get groomed because he looks like a mess.</p>
+
+            <audio id="cut-sound">
+              <source src="sounds/page2.mp3" />
+            </audio>
+          </div>
+          <div>
+            <img class="page2 cut-button" src="images/page2.png" />
+          </div>
+        </div>
+        <div class="slide-content">
+          <div class="text-content">
+            <a href="#" class="pause">CLOSE THE SHEET</a>
+            <a href="#" class="play">next page</a>
+            <p>It seems that he is dreading about the costs of the wedding and the time is running.</p>
+
+            <audio id="shower-sound">
+              <source src="sounds/page3.mp3" />
+            </audio>
+          </div>
+          <div>
+            <img class="page3 shower-button" src="images/page3.png" />
+          </div>
+        </div>
+        <div class="slide-content">
+          <div class="text-content">
+            <a href="#" class="pause">LET THEM EAT</a>
+            <a href="#" class="play">next page!</a>
+            <p>Family and friends gather for lunch. Anyway, this is the first and last time they will have luch out of his pocket</p>
+          
+            <audio id="eat-sound">
+              <source src="sounds/page4.mp3" />
+            </audio>
+          </div>
+          <div>
+            <img class="page4 eat-button" src="images/page4.png" />
+          </div>
+        </div>
+        <div class="slide-content">
+          <div class="text-content">
+            <a href="#" class="pause">THROW THEM IN</a>
+            <a href="#" class="play">next page</a>
+            <p>Friends and cousins bathing him because he will have to be squeaky clean.</p>
+
+            <audio id="clean-sound">
+              <source src="sounds/page5.mp3" />
+            </audio>
+          </div>
+          <div>
+            <img class="page5 clean-button" src="images/page5.png" />
+          </div>
+        </div>
+        <div class="slide-content">
+          <div class="text-content">
+            <a href="#" class="pause">MOVE THE CAR</a>
+            <a href="#" class="play">next page</a>
+            <p>Now, they will be draiving him around the city celebrating, you know he will not see the city for a while..</p>
+          
+            <audio id="horn-sound">
+              <source src="sounds/page6.mp3" />
+            </audio>
+          </div>
+          <div>
+            <img class="page6 horn-button" src="images/page6.png" />
+          </div>
+        </div>
+        <div class="slide-content">
+          <div class="text-content">
+            <a href="#" class="pause">DANCE!</a>
+            <a href="#" class="play">next page!</a>
+            <p>Finally, they arrived home after the drive...</p>
+
+            <audio id="dance-sound">
+              <source src="sounds/page7.mp3" />
+            </audio>
+          </div>
+          <div>
+            <img class="page7 dance-button" src="images/page7.png" />
+          </div>
+        </div>
+        <div class="slide-content">
+          <div class="text-content">
+            <a href="#" class="pause">COVER HIM</a>
+            <a href="#" class="play">next page</a>
+            <p>Little time to rest.</p>
+
+            <audio id="rest-sound">
+              <source src="sounds/page8.mp3" />
+            </audio>
+          </div>
+          <div>
+            <img class="page8 rest-button" src="images/page8.png" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <!-- link for your script file -->
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script>
+      var alarm = $("#alarm-sound")[0]
+      $(".alarm-button").click(function () {
+        alarm.volume = 0.2
+        if ($("audio#alarm-sound")[0].paused == false) {
+          alarm.pause()
+        } else {
+          alarm.play()
+        }
+        $(".page1").attr("src", "images/page1.gif")
+        setTimeout(function () {
+          $(".slick-track").css("left", "-100vw")
+          alarm.pause()
+        }, 3000)
+      })
+
+      var cut = $("#cut-sound")[0]
+      $(".cut-button").click(function () {
+        cut.volume = 0.2
+        if ($("audio#cut-sound")[0].paused == false) {
+          cut.pause()
+        } else {
+          cut.play()
+        }
+        $(".page2").attr("src", "images/page2.gif")
+        setTimeout(function () {
+          $(".slick-track").css("left", "-100vw")
+          cut.pause()
+        }, 3000)
+      })
+
+      var shower = $("#shower-sound")[0]
+      $(".shower-button").click(function () {
+        shower.volume = 0.5
+        if ($("audio#shower-sound")[0].paused == false) {
+          shower.pause()
+        } else {
+          shower.play()
+        }
+        $(".page3").attr("src", "images/page3.gif")
+        setTimeout(function () {
+          $(".slick-track").css("left", "-100vw")
+          shower.pause()
+        }, 3000)
+      })
+
+      var eat = $("#eat-sound")[0]
+      $(".eat-button").click(function () {
+        eat.volume = 0.5
+        if ($("audio#shower-sound")[0].paused == false) {
+          eat.pause()
+        } else {
+          eat.play()
+        }
+        $(".page4").attr("src", "images/page4.gif")
+        setTimeout(function () {
+          $(".slick-track").css("left", "-100vw")
+          eat.pause()
+        }, 3000)
+      })
+
+      var clean = $("#clean-sound")[0]
+      $(".clean-button").click(function () {
+        clean.volume = 0.5
+        if ($("audio#clean-sound")[0].paused == false) {
+          clean.pause()
+        } else {
+          clean.play()
+        }
+        $(".page5").attr("src", "images/page5.gif")
+        setTimeout(function () {
+          $(".slick-track").css("left", "-100vw")
+          clean.pause()
+        }, 3000)
+      })
+
+      var horn = $("#horn-sound")[0]
+      $(".horn-button").click(function () {
+        horn.volume = 0.5
+        if ($("audio#horn-sound")[0].paused == false) {
+          horn.pause()
+        } else {
+          horn.play()
+        }
+        $(".page6").attr("src", "images/page6.gif")
+        setTimeout(function () {
+          $(".slick-track").css("left", "-100vw")
+          horn.pause()
+        }, 3000)
+      })
+
+      var dance = $("#dance-sound")[0]
+      $(".dance-button").click(function () {
+        dance.volume = 0.5
+        if ($("audio#dance-sound")[0].paused == false) {
+          dance.pause()
+        } else {
+          dance.play()
+        }
+        $(".page7").attr("src", "images/page7.gif")
+        setTimeout(function () {
+          $(".slick-track").css("left", "-100vw")
+          dance.pause()
+        }, 9000)
+      })
+
+      var rest = $("#rest-sound")[0]
+      $(".rest-button").click(function () {
+        rest.volume = 0.5
+        if ($("audio#rest-sound")[0].paused == false) {
+          rest.pause()
+        } else {
+          rest.play()
+        }
+        $(".page8").attr("src", "images/page8.gif")
+        setTimeout(function () {
+          $(".slick-track").css("left", "-100vw")
+          rest.pause()
+        }, 3000)
+      })
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
