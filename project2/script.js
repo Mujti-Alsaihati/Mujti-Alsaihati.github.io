@@ -1,25 +1,9 @@
-// your script file for adding your own jquery
-$(function () {
-  // Your Code from here on down. Don't delete that line above!
+$('#ps1').click(function(){
+  $('.ps1-content').css('display', 'block')
+  $('.ps2-content').css('display', 'none')
+})
 
-  $(".single-slide").slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: false,
-    autoplaySpeed: 5000,
-    infinite: false,
-    pauseOnDotsHover: true,
-    arrows: true,
-    dots: true
-  })
-
-  $(".pause").on("click", function () {
-    $(".slider").slick("slickPause")
-  })
-
-  $(".play").on("click", function () {
-    $(".slider").slick("slickPlay")
-  })
-
-  // End of Your Code . Don't delete that line below!!
+$('#ps2').click(function(){
+  $('.ps1-content').css('display', 'none')
+  $('.ps2-content').css('display', 'block')
 })
