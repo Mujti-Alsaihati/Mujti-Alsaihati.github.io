@@ -1,6 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background: #131313 ;
+
+}
+
+img {
+  width: 100%;
+}
+.ps1-frame{
+width: 100%;
+  position: absolute;
+  top: 0px;
+}
+p {
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
+  font-weight: 400;
+  font-style: normal;
+}
+
 .timeline{
   width: 80%;
   margin: auto;
+
 }
 
 .timeline ul {
@@ -8,11 +31,13 @@
   display: flex;
   width: 100%;
   justify-content:space-between;
+
 }
 .timeline li {
   position: relative;
   flex: 1;
   border-bottom: 2px solid red;
+
 }
 .timeline li::before {
   position: absolute;
@@ -20,22 +45,28 @@
 }
 a {
   text-decoration: none;
+  color: #4C4C4C ;
+}
+.ps1 {
+
+  color: white;
 }
 
 .navthatworks {
   display: flex;
-  width: 80%;
-  margin: auto;
+  width: 90%;
+  margin-left: 180px;
+  margin-top: 50px;
 }
 .navthatworks div {
   flex:1;
-  border-bottom: 2px solid #333;
+  border-bottom: 5px solid #333;
 }
 .navthatworks div.dot {
   display: block;
   width: 10px;
   height: 10px;
-  background-color: black;
+  background-color: white;
   border-radius: 50%;
   margin-left: 16px;
   margin-bottom: -24px; /* this moves the dots down */
@@ -44,11 +75,14 @@ a {
 
 .navthatworks div:nth-child(1)::after{
   margin-left: -8px;
+  
 }
 
-.ps1-content, .ps2-content {
+.ps1-content, .ps2-content, .ps3-content, .ps4-content, .ps5-content {
   display:none;
+  color: white;
 }
+
 .navthatworks div:last-child{
   position: relative;
 }
@@ -57,7 +91,7 @@ div.white-out {
   width: 230px;
   height: 16px;
   border: none;
-  background-color: white;
+  background-color: #131313;
   bottom: -8px;
   right: -30px;
 
