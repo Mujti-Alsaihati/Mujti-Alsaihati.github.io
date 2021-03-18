@@ -2,8 +2,7 @@
     box-sizing: border-box;
   }
   body {
-    background-image: url("images/ps2_theme.png" );
-    height: 100%;
+    background-image: url("images/ps1_theme.png" );
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -12,12 +11,9 @@
   img {
     width: 100%;
   }
-  .ps1-frame{
-  width: 100%;
-    position: absolute;
-    top: 0px;
-  }
+
   p {
+    justify-content: center;
     font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
     font-weight: 400;
     font-style: normal;
@@ -26,10 +22,13 @@
     margin: auto;
     width: 50%;
     border: 3px solid green;
-    padding: 10px;
+    padding: 40px;
+    align-items: center;
+    display: flex;
   }
 
   h1 {
+    justify-content: center;
     font-family: 'Zrnic', sans-serif;
     background-color: black;
     color: white;
@@ -37,13 +36,15 @@
     margin: auto;
     width: 30%;
     border: 3px solid green;
-    padding: 60px;
+    border: flex;
+    padding: 40px;
     margin-top: 50px;
   }
   
   .timeline{
     width: 80%;
     margin: auto;
+    
   
   }
   
@@ -122,11 +123,7 @@
 
 }
 
-.ps1-content{
-  display:none;
-  color: white;
 
-}
 
 .container{
     display: flex ;
@@ -163,4 +160,13 @@
     order: 3;
 
 
+}
+
+@media only screen and (max-width: 768px) {
+  .projects {
+    flex-direction: column;
+  }
+  main{
+    grid-template-columns: 100%;
+  }
 }
