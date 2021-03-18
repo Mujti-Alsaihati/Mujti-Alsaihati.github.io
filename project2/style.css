@@ -78,7 +78,28 @@ a {
   
 }
 
-.ps1-content, .ps2-content, .ps3-content, .ps4-content, .ps5-content {
+.ps1-content{
+  display:none;
+  color: white;
+
+}
+
+.ps2-content{
+  display:none;
+  color: white;
+}
+
+.ps3-content{
+  display:none;
+  color: white;
+}
+
+.ps4-content{
+  display:none;
+  color: white;
+}
+
+.ps5-content {
   display:none;
   color: white;
 }
