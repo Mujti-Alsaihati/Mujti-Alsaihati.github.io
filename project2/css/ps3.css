@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    background-image: url("images/ps3_theme.png" );
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  img {
+    width: 100%;
+  }
+
+  p {
+    justify-content: center;
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
+    font-weight: 400;
+    font-style: normal;
+    background-color: black;
+    color: white;
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 40px;
+    align-items: center;
+    display: flex;
+  }
+
+  h1 {
+    justify-content: center;
+    font-family: 'Zrnic', sans-serif;
+    background-color: black;
+    color: white;
+    font-size: 35px;
+    margin: auto;
+    width: 30%;
+    border: 3px solid green;
+    border: flex;
+    padding: 40px;
+    margin-top: 50px;
+  }
+  
+  .timeline{
+    width: 80%;
+    margin: auto;
+    
+  
+  }
+  
+  .timeline ul {
+    
+    display: flex;
+    width: 100%;
+    justify-content:space-between;
+  
+  }
+  .timeline li {
+    position: relative;
+    flex: 1;
+    border-bottom: 2px solid red;
+  
+  }
+  .timeline li::before {
+    position: absolute;
+    bottom: -20px;
+  }
+  a {
+    text-decoration: none;
+    color: #4C4C4C ;
+  }
+  .ps1 {
+  
+    color: white;
+  }
+  
+  .navthatworks {
+    display: flex;
+    width: 90%;
+    margin-left: 180px;
+    margin-top: -100px;
+  }
+  .navthatworks div {
+    flex:1;
+    border-bottom: 5px solid #131313;
+  }
+  .navthatworks div.dot {
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    margin-left: 16px;
+    margin-bottom: -24px; /* this moves the dots down */
+    
+  }
+  
+  .navthatworks div:nth-child(1)::after{
+    margin-left: -8px;
+    
+  }
+
+  .navthatworks div:last-child{
+    position: relative;
+  }
+  div.white-out {
+    position: absolute;
+    width: 230px;
+    height: 16px;
+    border: none;
+    background-color: #2F2F2F;
+    bottom: -8px;
+    right: -30px;
+  
+  }
+
+  .ps1-con{
+    width: 500px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    margin-left: 400px;
+
+
+}
+
+
+
+.container{
+    display: flex ;
+    padding-top: 50px;
+    justify-content: space-evenly;
+
+    
+
+}
+.container div{
+    border: 1px red;
+    padding: 10px;
+    
+
+}
+
+.game1{
+    flex: 1;
+    order: 1;
+    
+
+}
+
+.game2{
+    flex: 1;
+    order: 2;
+
+
+
+}
+
+.game3{
+    flex: 1;
+    order: 3;
+
+
+}
+
+@media only screen and (max-width: 768px) {
+  .projects {
+    flex-direction: column;
+  }
+  main{
+    grid-template-columns: 100%;
+  }
+}
