@@ -7,22 +7,53 @@ body {
 }
 
 img {
+  min-width: 100px;
+  max-width: 100%;
+  min-height: 100px;
+  max-height: 500px;
+
+} 
+
+header, nav {
   width: 100%;
+  margin: auto;
+  
 }
-.ps1-frame{
-width: 100%;
-  position: absolute;
-  top: 0px;
-}
+
 p {
+  justify-content: center;
   font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
   font-weight: 400;
   font-style: normal;
+  background-color: black;
+  color: white;
+  min-width: 100px;
+  max-width: 500px;
+  margin: auto;
+  border: 3px solid green;
+  padding: 40px;
+  text-align: center;
+}
+
+h1 {
+  justify-content: center;
+  font-family: 'Zrnic', sans-serif;
+  background-color: black;
+  color: white;
+  font-size: 35px;
+  min-width: 100px;
+  max-width: 500px;
+  margin: auto;
+  border: 3px solid green;
+  padding: 40px;
+  text-align: center;
+  margin-top: 50px;
 }
 
 .timeline{
   width: 80%;
   margin: auto;
+  
 
 }
 
@@ -30,7 +61,7 @@ p {
   
   display: flex;
   width: 100%;
-  justify-content:space-between;
+  justify-content: space-evenly;
 
 }
 .timeline li {
@@ -46,74 +77,46 @@ p {
 a {
   text-decoration: none;
   color: #4C4C4C ;
-}
-.ps1 {
 
-  color: white;
 }
 
 .navthatworks {
   display: flex;
-  width: 90%;
-  margin-left: 180px;
-  margin-top: 50px;
+  max-width: 90%;
+  padding-bottom: 30px;
+  padding-top: 10px;
 }
 .navthatworks div {
   flex:1;
-  border-bottom: 5px solid #333;
+  border-bottom: 5px solid #2F2F2F;
 }
 .navthatworks div.dot {
-  display: block;
+  display: flex;
   width: 10px;
   height: 10px;
   background-color: white;
   border-radius: 50%;
-  margin-left: 16px;
+  margin-left: 10px;
   margin-bottom: -24px; /* this moves the dots down */
   
 }
 
-.navthatworks div:nth-child(1)::after{
-  margin-left: -8px;
-  
-}
 
-.ps1-content{
-  display:none;
-  color: white;
 
-}
 
-.ps2-content{
-  display:none;
-  color: white;
-}
-
-.ps3-content{
-  display:none;
-  color: white;
-}
-
-.ps4-content{
-  display:none;
-  color: white;
-}
-
-.ps5-content {
-  display:none;
-  color: white;
-}
-
-.navthatworks div:last-child{
-  position: relative;
-}
 div.white-out {
-  position: absolute;
-  width: 230px;
+  width: 0px;
   height: 16px;
-  border: none;
-  background-color: #131313;
-  bottom: -8px;
-  right: -30px;
+  justify-content: space-evenly;
 
+
+}
+
+@media only screen and (max-width: 768px) {
+.projects {
+  flex-direction: column;
+}
+main{
+  grid-template-columns: 100%;
+}
 }
