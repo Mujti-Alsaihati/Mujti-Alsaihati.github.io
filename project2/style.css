@@ -2,8 +2,9 @@
   box-sizing: border-box;
 }
 body {
-  background: #131313 ;
-
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 img {
@@ -11,18 +12,35 @@ img {
   max-width: 100%;
   min-height: 100px;
   max-height: 500px;
+}
+.home-page{
+  background: #131313
+}
+.ps1-page {
+  background-image: url("images/ps1_theme.png" );
+}
+.ps2-page {
+  background-image: url("images/ps2_theme.png" );
+}
+.ps3-page{
+  background-image: url("images/ps3_theme.jpg");
+}
+.ps4-page {
+  background-image: url("images/ps4_theme.png" );
+}
+.ps5-page {
+  background-image: url("images/ps5_theme.png" );
+}
 
-} 
-
-header, nav {
+header,
+nav {
   width: 100%;
   margin: auto;
-  
 }
 
 p {
   justify-content: center;
-  font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-style: normal;
   background-color: black;
@@ -37,7 +55,7 @@ p {
 
 h1 {
   justify-content: center;
-  font-family: 'Zrnic', sans-serif;
+  font-family: "Zrnic", sans-serif;
   background-color: black;
   color: white;
   font-size: 35px;
@@ -50,25 +68,20 @@ h1 {
   margin-top: 50px;
 }
 
-.timeline{
+.timeline {
   width: 80%;
   margin: auto;
-  
-
 }
 
 .timeline ul {
-  
   display: flex;
   width: 100%;
   justify-content: space-evenly;
-
 }
 .timeline li {
   position: relative;
   flex: 1;
   border-bottom: 2px solid red;
-
 }
 .timeline li::before {
   position: absolute;
@@ -76,21 +89,30 @@ h1 {
 }
 a {
   text-decoration: none;
-  color: #4C4C4C ;
-
+  color: #4c4c4c;
 }
-
-.navthatworks {
+.home-navthatworks{
   display: flex;
   max-width: 90%;
   padding-bottom: 30px;
   padding-top: 10px;
 }
-.navthatworks div {
+.navthatworks {
+  display: flex;
+  max-width: 90%;
+  margin-top: -70px;
+  padding-bottom: 30px;
+  padding-top: 10px;
+}
+.home-navthatworks div {
   flex:1;
   border-bottom: 5px solid #2F2F2F;
 }
-.navthatworks div.dot {
+.navthatworks div {
+  flex: 1;
+  border-bottom: 5px solid #131313;
+}
+.navthatworks div.dot, .home-navthatworks div.dot {
   display: flex;
   width: 10px;
   height: 10px;
@@ -98,25 +120,78 @@ a {
   border-radius: 50%;
   margin-left: 10px;
   margin-bottom: -24px; /* this moves the dots down */
-  
+  border: none;
 }
-
-
-
+.navthatworks div.active {
+  background-color: green;
+}
+.navthatworks div:nth-child(1)::after, .home-navthatworks div:nth-child(1)::after {
+  margin-left: -8px;
+}
 
 div.white-out {
   width: 0px;
   height: 16px;
   justify-content: space-evenly;
+}
 
+.ps1-con, .ps2-con, .ps3-con, .ps4-con {
+  display: flex;
+  min-width: 100px;
+  max-width: 100%;
+  min-height: 100px;
+  max-height: 500px;
+  margin: auto;
+  padding: 20px;
+}
 
+.ps5-con{
+  display: flex;
+  min-width: 100px;
+  max-width: 65%;
+  min-height: 100px;
+  max-height: 500px;
+  margin: auto;
+  padding: 20px;
+}
+
+.sound-on {
+  display: none;
+}
+
+.container {
+  display: flex;
+  padding-top: 50px;
+  justify-content: space-evenly;
+}
+.container div {
+  border: 1px red;
+  padding: 10px;
+}
+
+.game1 {
+  flex: 1;
+  order: 1;
+}
+
+.game2 {
+  flex: 1;
+  order: 2;
+}
+
+.game3 {
+  flex: 1;
+  order: 3;
 }
 
 @media only screen and (max-width: 768px) {
-.projects {
-  flex-direction: column;
-}
-main{
-  grid-template-columns: 100%;
-}
+  .projects {
+    flex-direction: column;
+  }
+  main {
+    grid-template-columns: 100%;
+  }
+  .sound-on {
+    display: block;
+  }
 }
