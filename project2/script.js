@@ -40,7 +40,7 @@ $("#ps5").click(function () {
 
 var aud = document.getElementById("myaudio")
 
-aud.volume = 0.3
+aud.volume = 0.5
 
 $(".sound-on").click(function () {
   aud.play()
